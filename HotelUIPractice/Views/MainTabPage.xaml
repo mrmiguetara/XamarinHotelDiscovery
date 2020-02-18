@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:views="clr-namespace:HotelUIPractice.Views"
+            mc:Ignorable="d"
+             x:Class="HotelUIPractice.Views.MainTabPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+              android:TabbedPage.BarSelectedItemColor="Yellow"
+            BarTextColor="DarkGray"
+            NavigationPage.HasNavigationBar="False">
+    <TabbedPage.Children>
+        
+        <NavigationPage Title="Home" IconImageSource="https://img.icons8.com/pastel-glyph/2x/home.png">
+            <x:Arguments>
+                <views:HomePage />
+            </x:Arguments>
+        </NavigationPage>
+        
+        <views:HomePage Title="Discovery" IconImageSource="https://www.iconninja.com/files/58/191/807/direction-globe-location-pin-gps-map-marker-icon.png"/>
+        <views:HomePage Title="Bookmarks" IconImageSource="https://cdn4.iconfinder.com/data/icons/basic-user-interface-4/32/Bookmark_-512.png"/>
+        <views:HomePage Title="Top Foodle" IconImageSource="https://icons-for-free.com/iconfiles/png/512/trophy-131965017670230989.png"/>
+        <views:HomePage Title="Profile" IconImageSource="https://icons-for-free.com/iconfiles/png/512/friend+human+man+member+person+profile+user+users+icon-1320168707291252637.png"/>
+    </TabbedPage.Children>
+</TabbedPage>

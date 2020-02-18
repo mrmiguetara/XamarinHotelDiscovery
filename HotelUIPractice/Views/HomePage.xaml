@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HotelUIPractice.Views.HomePage"
+             NavigationPage.HasNavigationBar="True"
+             
+             >
+    <NavigationPage.TitleView>
+        <Grid>
+            <Label HorizontalOptions="CenterAndExpand" Text="Discovery" TextColor="Black" FontSize="24" FontAttributes="Bold"/>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid Padding="20" ColumnSpacing="20" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0" Grid.Column="0" CornerRadius="10" BorderColor="Transparent" >
+                <StackLayout>
+                    <Image Source="https://freeiconshop.com/wp-content/uploads/edd/beer-outline.png"
+                               WidthRequest="80"></Image>
+                    <Label Text="Bar &amp; Hotels"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           />
+
+                    <Label Text="42 Place"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="DarkGray"
+                               />
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="0" Grid.Column="1" CornerRadius="10" BorderColor="Transparent">
+                <StackLayout>
+                    <Image Source="https://cdn0.iconfinder.com/data/icons/hotel-and-restaurant-19/70/dish__hotel__foodcover__restaurant__dinner-512.png"
+                               WidthRequest="80"></Image>
+                    <Label Text="Fine Dining"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           />
+
+                    <Label Text="15 Place"
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="DarkGray" />
+
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="1" Grid.Column="0" CornerRadius="10" BorderColor="Transparent">
+                <StackLayout>
+                    <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9JoZDDFFJRKm6zj5biwhacfcAuIgjjZ7x561EKRsmaKdCi8dE"
+                               WidthRequest="80"></Image>
+                    <Label Text="Cafes"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           />
+
+                    <Label Text="28 Place"
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="DarkGray" />
+
+                </StackLayout>
+            </Frame>
+
+
+            <Frame Grid.Row="1" Grid.Column="1" CornerRadius="10" BorderColor="Transparent" >
+                <StackLayout>
+                    <Image Source="https://www.pngrepo.com/png/176925/170/route-gps.png"
+                               WidthRequest="80"></Image>
+                    <Label Text="Nearby"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           />
+
+                    <Label Text="34 Place"
+                               HorizontalOptions="CenterAndExpand"
+                               TextColor="DarkGray"
+                               />
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="2" Grid.Column="0" CornerRadius="10" BorderColor="Transparent">
+                <StackLayout>
+                    <Image Source="https://cdn.iconscout.com/icon/premium/png-256-thumb/fast-food-1634244-1385262.png"
+                               WidthRequest="80"></Image>
+                    <Label Text="Fast Foods"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           />
+
+                    <Label Text="29 Place"
+                           HorizontalOptions="CenterAndExpand"
+                           TextColor="DarkGray" />
+
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="2" Grid.Column="1" CornerRadius="10" BorderColor="Transparent">
+                <StackLayout>
+                    <Image Source="https://static.thenounproject.com/png/213990-200.png"
+                               WidthRequest="80"></Image>
+                    <Label Text="Featured Foods"
+                           HorizontalOptions="CenterAndExpand"
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           />
+
+                    <Label Text="21 Place"
+                           HorizontalOptions="Center"
+                           TextColor="DarkGray" />
+
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
